@@ -4,7 +4,7 @@
 ![Open Source](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red)
 ![Security](https://img.shields.io/badge/Security-Payloads-blue)
 
-Bu projenin genel amacı OWASP Top 10 zafiyetlerinden SQL Injection'ı anlatmak ve güvenlik dünyası için faydalı bir çalışma ortaya koymaktır.
+The primary goal of this project is to explain SQL Injection (one of the OWASP Top 10 vulnerabilities) and to provide a beneficial resource for the security community.
 
 ## 🚀 Quick Links
 
@@ -856,19 +856,19 @@ db.Query("SELECT name FROM users WHERE id = ?", id)
 
 ## Burp Suite Intruder Payloads
 
-Güvenlik testlerinde (özellikle Burp Suite Intruder kullanarak) daha etkili sonuçlar alabilmeniz için optimize edilmiş bir payload listesi hazırladık. Bu listeyi doğrudan Intruder'ın "Payloads" sekmesine yükleyebilirsiniz.
+We have prepared an optimized payload list to help you achieve more effective results in security tests (especially when using Burp Suite Intruder). You can load this list directly into the "Payloads" tab of the Intruder.
 
-- **Payload Listesi**: [burp-intruder-payloads.txt](file:///Users/ismailtasdelen/Documents/GitHub/sql-injection-payload-list/burp-intruder-payloads.txt)
+- **Payload List**: [burp-intruder-payloads.txt](file:///Users/ismailtasdelen/Documents/GitHub/sql-injection-payload-list/burp-intruder-payloads.txt)
 
-### Nasıl Kullanılır?
+### How to Use?
 
-1. Burp Suite'i açın ve hedefinize bir istek gönderin.
-2. İsteği **Intruder**'a gönderin.
-3. **Positions** sekmesinde SQL enjeksiyonu denemek istediğiniz parametreleri seçin.
-4. **Payloads** sekmesine gidin.
-5. `Payload type` olarak `Simple list` seçin.
-6. `Payload Options` kısmında `Load...` butonuna tıklayarak [burp-intruder-payloads.txt](file:///Users/ismailtasdelen/Documents/GitHub/sql-injection-payload-list/burp-intruder-payloads.txt) dosyasını seçin veya yukarıdaki listeyi kopyalayıp yapıştırın.
-7. **Start attack** butonuna basarak taramayı başlatın.
+1. Open Burp Suite and send a request to your target.
+2. Send the request to **Intruder**.
+3. In the **Positions** tab, select the parameters you want to test for SQL injection.
+4. Go to the **Payloads** tab.
+5. Select `Simple list` as the `Payload type`.
+6. In the `Payload Options` section, click the `Load...` button and select the [burp-intruder-payloads.txt](file:///Users/ismailtasdelen/Documents/GitHub/sql-injection-payload-list/burp-intruder-payloads.txt) file, or copy and paste the list above.
+7. Click the **Start attack** button to begin the scan.
 
 ## References
 
