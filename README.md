@@ -6,6 +6,8 @@
 
 The primary goal of this project is to explain SQL Injection (one of the OWASP Top 10 vulnerabilities) and to provide a beneficial resource for the security community.
 
+<img src="https://github.com/payload-box/sql-injection-payload-list/blob/main/assets/sql-injection-payload-list-ismailtasdelen.jpeg">
+
 ## 🚀 Quick Links
 
 - [All-in-One Burp Suite List](file:///Users/ismailtasdelen/Documents/GitHub/sql-injection-payload-list/burp-intruder-payloads.txt)
